@@ -1,6 +1,7 @@
 package com.domain.basicdi;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -8,7 +9,7 @@ public class MovieLister {
 
     private MovieFinder finder;
 
-    public MovieLister(MovieFinder finder) {
+    public MovieLister(@Qualifier("movieFinderJdbc") MovieFinder finder) {
         this.finder = finder;
     }
 

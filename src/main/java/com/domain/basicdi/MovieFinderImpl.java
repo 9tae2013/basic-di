@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
+@Repository("movieFinderRest")
 public class MovieFinderImpl implements MovieFinder {
     private List<Movie> movies;
 
