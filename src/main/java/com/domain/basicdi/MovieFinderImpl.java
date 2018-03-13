@@ -1,8 +1,11 @@
 package com.domain.basicdi;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class MovieFinderImpl implements MovieFinder {
     private List<Movie> movies;
 

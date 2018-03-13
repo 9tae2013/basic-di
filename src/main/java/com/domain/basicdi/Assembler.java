@@ -1,10 +1,14 @@
 package com.domain.basicdi;
 
 
-public class Assembler {
-    public static void main(String[] args) {
-        MovieLister lister = new MovieLister();
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-        lister.listMovie();
+
+@SpringBootApplication
+public class Assembler {
+
+    public static void main(String[] args) {
+        SpringApplication.run(Assembler.class, args);
     }
 }
